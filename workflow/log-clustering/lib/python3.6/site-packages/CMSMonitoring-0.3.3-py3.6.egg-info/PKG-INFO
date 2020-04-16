@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: CMSMonitoring
+Version: 0.3.3
+Summary: CMS Monitoring utilities
+Home-page: https://github.com/dmwm/CMSMonitoring
+Author: Valentin Kuznetsov
+Author-email: vkuznet@gmail.com
+License: MIT
+Description: CMS Monitoring utilities
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
