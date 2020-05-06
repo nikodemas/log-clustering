@@ -33,7 +33,7 @@ cat requirements.txt | xargs -n 1 pip install
 
 Also, `clusterlogs` folder must stay in the same directory as `workflow.py`.
 
-Get kreberos ticket:
+Get kerberos ticket:
 ```bash
 kinit <USERNAME>@CERN.CH
 ```
