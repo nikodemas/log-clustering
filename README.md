@@ -4,5 +4,5 @@ In "old-notebooks" one can see some of the first tests of the clusterlogs module
 
 In the "workflow" folder one can see my attempts of putting information from jupyter notebooks into continuous workflow.
 
-By running the "workflow.py" script from lxplus machine the FTS error messages are taken from HDFS, grouped into clusters and then sent to MonIT.
+By running the "workflow.py" script from lxplus machine the FTS error messages (messages of yesterday by default but might be changed to some other day(s)) are taken from HDFS, grouped into clusters and then sent to MonIT.
 
