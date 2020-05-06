@@ -15,6 +15,7 @@ import numpy as np
 import pandas as pd
 from clusterlogs import pipeline
 import nltk
+nltk.download('stopwords')
 import uuid
 from CMSMonitoring.StompAMQ import StompAMQ
 

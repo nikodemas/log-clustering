@@ -26,9 +26,9 @@ Activate your virtualenv:
 source new_env/bin/activate
 ```
 
-In this environment install the libraries from requirements file:
+In this environment install the packages one by one from requirements file:
 ```bash
-pip install -r requirements.txt
+cat requirements.txt | xargs -n 1 pip install
 ```
 
 Also, `clusterlogs` folder must stay in the same directory as `workflow.py`.
