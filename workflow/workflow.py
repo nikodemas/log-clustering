@@ -13,9 +13,9 @@ from pyspark.sql.types import DoubleType, IntegerType, StructType, StructField, 
 from pyspark.sql.functions import col, lit, regexp_replace, trim, lower, concat, count
 import numpy as np
 import pandas as pd
-from clusterlogs import pipeline
 import nltk
 nltk.download('stopwords')
+from clusterlogs import pipeline
 import uuid
 from CMSMonitoring.StompAMQ import StompAMQ
 
