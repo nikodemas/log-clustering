@@ -4,7 +4,7 @@ I will be assuming that the user has access to the Analytix cluster.
 
 Firstly, connect to lxplus:
 ```bash
-ssh user@lxplus.cern.ch
+ssh <USERNAME>@lxplus.cern.ch
 ```
 Go to a place where you want to have the repo and clone it there:
 ```bash
@@ -33,10 +33,15 @@ cat requirements.txt | xargs -n 1 pip install
 
 Also, `clusterlogs` folder must stay in the same directory as `workflow.py`.
 
+Get kreberos ticket:
+```bash
+kinit <USERNAME>@CERN.CH
+```
+
 Setup environment to use HADOOP with the following commands:
 ```bash
- source "/cvmfs/sft.cern.ch/lcg/views/LCG_96python3/x86_64-centos7-gcc8-opt/setup.sh"
- source "/cvmfs/sft.cern.ch/lcg/etc/hadoop-confext/hadoop-swan-setconf.sh" analytix
+source "/cvmfs/sft.cern.ch/lcg/views/LCG_96python3/x86_64-centos7-gcc8-opt/setup.sh"
+source "/cvmfs/sft.cern.ch/lcg/etc/hadoop-confext/hadoop-swan-setconf.sh" analytix
 ```
 
 Now you can run `workflow.py`:
